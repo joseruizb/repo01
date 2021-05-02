@@ -29,7 +29,7 @@ public class ej01 {
 		//Panel con los botones
 		JFrame f =new JFrame("Perro");
 		
-	
+		// AÃ±ado este comentario	
 		//Panel de Jframe
 		Container c = f.getContentPane();
 		c.setLayout(new BorderLayout());
@@ -42,7 +42,7 @@ public class ej01 {
 		//Parte Sur
 		JPanel ps = new JPanel(new FlowLayout());
 		JTextField t = new JTextField("",15);
-		JLabel et2 = new JLabel("Observación:");
+		JLabel et2 = new JLabel("ObservaciÃ³n:");
 		JComboBox<String> jc = new JComboBox<String>();
 		jc.addItem("Eleccion 1");
 		jc.addItem("Eleccion 2");
@@ -67,7 +67,7 @@ public class ej01 {
 		JPanel pc2 = new JPanel(new FlowLayout());
 		Vector<String> listaOpciones = new Vector<String>();
 		for (int i=0; i<12; i++)
-		listaOpciones.add("Item número "+(i+1));
+		listaOpciones.add("Item nÃºmero "+(i+1));
 		JList<String> miLista = new JList<String>(listaOpciones);
 		JScrollPane scp1 = new JScrollPane(miLista);
 		pc2.add(scp1);
@@ -107,7 +107,7 @@ public class ej01 {
 		f.setSize(200,400);
 		f.pack();
 		f.setVisible(true);
-		// Añado el control alcierredelaventana
+		// AÃ±ado el control alcierredelaventana
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
